@@ -2,7 +2,6 @@ using Terraria;
 using Terraria.GameContent.Drawing;
 using Terraria.ID;
 using TShockAPI;
-using dw = Terraria.GameContent.Drawing;
 
 namespace Abilities.Abilities
 {
@@ -40,7 +39,7 @@ namespace Abilities.Abilities
         {
             TSPlayer plr = (TSPlayer)args[0];
 
-            dw.ParticleOrchestraSettings settings = new()
+            ParticleOrchestraSettings settings = new()
             {
                 IndexOfPlayerWhoInvokedThis = (byte)plr.Index,
                 MovementVector = new(0, 0),
